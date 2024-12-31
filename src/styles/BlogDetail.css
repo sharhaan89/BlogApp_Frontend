@@ -1,0 +1,157 @@
+/* Blog detail container */
+.blog-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Blog title styling */
+  .blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header actions (edit and delete buttons) */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Meta info (author and date) */
+  .meta-info {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .author {
+    font-weight: bold;
+  }
+  
+  .created-at {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Blog content paragraphs */
+  .content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .paragraph {
+    margin-bottom: 20px;
+  }
+  
+  /* Loading, error, and not found messages */
+  .loading, .error, .not-found {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  /* Delete modal overlay */
+  .delete-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Delete modal container */
+  .delete-modal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .modal-message {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .cancel-btn, .confirm-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #ccc;
+    color: white;
+    border: none;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #888;
+  }
+  
+  .confirm-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+  }
+  
+  .confirm-btn:hover {
+    background-color: #c0392b;
+  }
+  
