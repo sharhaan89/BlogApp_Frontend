@@ -29,7 +29,7 @@ export default function BlogDetail() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`${apiUrl}/blog/view/${id}`);
+        const response = await axios.get(`https://blogapp-backend-bn79.onrender.com/blog/view/${id}`);
         setBlog(response.data.blog);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'Failed to fetch blog');
@@ -42,7 +42,7 @@ export default function BlogDetail() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`${apiUrl}/blog/delete/${id}`, {
+      await axios.delete(`https://blogapp-backend-bn79.onrender.com/blog/delete/${id}`, {
         data: { userId: currentUserId }
       });
       navigate('/');

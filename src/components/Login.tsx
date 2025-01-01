@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";  // Import Link for routing
+import { Link } from "react-router-dom";
 import '../styles/Login.css';
 
 const apiUrl = process.env.REACT_APP_API_URL;
@@ -26,7 +26,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `${apiUrl}/user/login`,
+        'https://blogapp-backend-bn79.onrender.com/user/login',
         { email, password },
         { withCredentials: true }
       );      

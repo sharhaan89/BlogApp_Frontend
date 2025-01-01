@@ -28,7 +28,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        `${apiUrl}/user/register`,
+        'https://blogapp-backend-bn79.onrender.com/user/register',
         { username, email, password },
         { withCredentials: true }
       );

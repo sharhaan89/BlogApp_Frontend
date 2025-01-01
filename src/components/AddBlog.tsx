@@ -27,7 +27,7 @@ const AddBlog = () => {
 
         try {
             const response = await axios.post(
-                `${apiUrl}/blog/create`,
+                'https://blogapp-backend-bn79.onrender.com/blog/create',
                 { title, content, userId }
             );
 
